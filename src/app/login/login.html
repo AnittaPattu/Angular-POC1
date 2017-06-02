@@ -1,0 +1,11 @@
+<section>
+    <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+        <label>Username</label>
+        <input type="text" name="username" formControlName="username" class="loginfieldAlign fieldAlign formcontrol">
+        <div class="error clear" *ngIf="loginForm.controls.username.errors && loginForm.controls.username.dirty"> It is required!</div>
+        <label>Password</label>
+        <input type="password" name="password" formControlName="password" class="loginfieldAlign fieldAlign formcontrol">
+        <div class="error clear" *ngIf="loginForm.controls.password.errors && loginForm.controls.password.dirty"> Password is required!</div>
+        <input type="submit" value="LOGIN" [disabled]="!loginForm.valid">
+    </form>
+</section>

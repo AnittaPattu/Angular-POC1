@@ -1,0 +1,28 @@
+[
+      {
+         "Virumaandi" :
+            {
+                "theatre":["ABIRAMI THEATRES PVT LTD","ROHINI THEATRE"],
+                "image":"assests/images/virumandi.jpg"  ,
+                "timings":["6:15","2:00"]          
+            }        
+       } , 
+       {
+         "Bahubali" :
+            {
+                "theatre":["RAKKI CINEMAS","MARLEN CINEMAS"],
+                "image":"assests/images/bahubali.jpg" ,
+                "timings":["11:15","6:00"]      
+            }         
+       }, 
+        {
+         "Bogan" :
+            {
+                "theatre":["ABIRAMI THEATRES PVT LTD","MARLEN CINEMAS"],
+                "image":"assests/images/bogan.jpg",
+                "timings":["12:15","9:00"]       
+            }       
+       }     
+      
+     
+]

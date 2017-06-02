@@ -1,0 +1,25 @@
+<section>
+<form [formGroup]="bookingForm">
+    <div>
+        <label>Movie </label>
+        <input type="text" value="moviefilter" formControlName="moviefilter" (keyup)=filter() (keydown)=filter2() />
+        <span *ngIf="filteredList.length > 0">
+            <ul class="suggestion"  >
+                <li *ngFor="let m of filteredList">        
+                    <p (click)="select(m)">{{m}}</p>
+                </li>
+            </ul>
+        </span>	
+    </div>
+    <div *ngIf="hide">
+        <img src="{{moviedesc.image}}" >
+        <ul>
+            <li  *ngFor="let theatre of moviedesc.theatre">
+                <a href="#" (click)="timings()">{{theatre}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <button (click)="booking()">Booking</button>
+</form>
+</section>
